@@ -42,9 +42,12 @@ header {
 .header {
 	width:100%;
 	background-color: #fff;
-
 	margin-bottom: 0px;
 	padding: 0px;
+}
+
+.active {
+	color: #555;
 }
 
 nav {
