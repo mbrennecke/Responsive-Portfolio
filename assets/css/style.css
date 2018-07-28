@@ -141,18 +141,17 @@ h2 {
   input[type=text], textarea {
 	width: 100%;
 	border: 1px solid #ddd;
+	margin-bottom: 4px;
 }
 
 input[type=submit] {
 	background-color: #4aaaa5;
 	color: #fff;
 	padding: 5px 15px;
-	margin-bottom:20px;
+	margin-bottom:10px;
 }
 
 .image {
-	
-
 	position: relative;
 	z-index: 1;
 
@@ -179,4 +178,52 @@ input[type=submit] {
 	text-decoration: none;
 }
 
+@media only screen and (max-width: 600px) {
+	.container {
+		width: 500px;
+	}
+}
+
+@media only screen and (max-device-width : 480px) {
+	.container {
+		width: 400px;
+	}
+	#headshot {
+		width: 60px;
+		height: 80px;
+	}
+	.portfolio-p {
+		margin-right: 0;
+	}
+}
+
+@media only screen and (max-width : 320px) {
+	.container {
+		width: 300px;
+	}
+	#headshot {
+		width: 60px;
+		height: 80px;
+	}
+	.portfolio-p {
+		margin-right: 0;
+		padding-bottom: 15px;
+	}
+	.image {
+		width: 200px;
+		height: 200px;
+	}
+	.h2-style {
+		font-size: .7em;
+	}
+	.header-container {
+		font-size: .8em;
+	}
+	.title {
+		width: 100%;
+	}
+	.last {
+		margin-right: 15px;
+	}
+}
 
