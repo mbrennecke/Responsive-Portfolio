@@ -21,12 +21,14 @@ body {
 
 h1 {
     font-family: 'Georgia', Times, Times New Roman, serif;
+	margin-top: 0;
+	
 }
 
 .title {
 	color: #fff;
 	background-color: #4aaaa5;
-	padding: 15px;
+	padding: 25px;
 	width: 335px;
 	float: left;
 	margin-bottom: 0px;
@@ -144,7 +146,9 @@ h2 {
   input[type=text], textarea {
 	width: 100%;
 	border: 1px solid #ddd;
-	margin-bottom: 4px;
+	margin-bottom: 10px;
+	line-height: 2;
+	text-indent: 10px;
 }
 
 input[type=submit] {
@@ -162,7 +166,7 @@ input[type=submit] {
 
 .portfolio-p {
 	float: left;
-	margin-right: 35px;
+	margin-right: 25px;
 	margin-bottom: 20px;
 }
 
@@ -181,52 +185,56 @@ input[type=submit] {
 	text-decoration: none;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-device-width: 980px) {
 	.container {
-		width: 500px;
+		margin-left: 50px;
+	}
+	.content {
+		width: 650px;
+	}
+	nav {
+		margin-right: 50px;
 	}
 }
 
-@media only screen and (max-device-width : 480px) {
-	.container {
-		width: 400px;
+@media only screen and (max-device-width : 768px) {
+	nav {
+		margin-right: 50px;
 	}
-	#headshot {
-		width: 60px;
-		height: 80px;
+	.content {
+		width: 90%;
 	}
-	.portfolio-p {
-		margin-right: 0;
-	}
-}
-
-@media only screen and (max-width : 320px) {
-	.container {
-		width: 300px;
-	}
-	#headshot {
-		width: 60px;
-		height: 80px;
+	textarea {
+		height: 150px;
 	}
 	.portfolio-p {
-		margin-right: 0;
-		padding-bottom: 15px;
+		width: 45%;
+		margin: 20px auto;
+		padding: 20px;
 	}
 	.image {
-		width: 200px;
-		height: 200px;
-	}
-	.h2-style {
-		font-size: .7em;
-	}
-	.header-container {
-		font-size: .8em;
-	}
-	.title {
 		width: 100%;
 	}
-	.last {
-		margin-right: 15px;
+}
+
+@media only screen and (max-device-width : 640px) {
+	h1.title {
+		width: 90%;
+		text-align: center;
+	}
+	nav {
+		float: none;
+		clear: left;
+		margin: 0 auto;
+	}
+	ul {
+		margin: 0 auto;
+	}
+	.img-cont {
+		width: 90%;
+	}
+	.headshot {
+		width: 100%;
 	}
 }
 
