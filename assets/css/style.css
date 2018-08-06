@@ -187,7 +187,7 @@ input[type=submit] {
 	text-decoration: none;
 }
 
-@media only screen and (max-device-width: 980px) {
+@media only screen and (max-width: 980px) {
 	.container {
 		margin-left: 50px;
 	}
@@ -199,7 +199,7 @@ input[type=submit] {
 	}
 }
 
-@media only screen and (max-device-width : 768px) {
+@media only screen and (max-width : 768px) {
 	nav {
 		margin-right: 50px;
 	}
@@ -228,7 +228,7 @@ input[type=submit] {
 	}
 }
 
-@media only screen and (max-device-width : 640px) {
+@media only screen and (max-width : 640px) {
 	.container {
 		width: 100%;
 		margin: 0;
